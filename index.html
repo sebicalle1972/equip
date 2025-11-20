@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El nostre equip per al Rectorat UdG (HTML/CSS)</title>
+    <style>
+        /* --- Paleta de Colors i Fonts (Manté l'estil Som el Canvi) --- */
+        :root {
+            --color-dark-green: #004D40; /* Rols */
+            --color-blue: #0079C1;       /* Títols */
+            --color-orange: #FF8C00;     /* Noms */
+            --color-light-bg: #F0F8F7;
+        }
+
+        body {
+            font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra el contingut a la pantalla */
+        }
+
+        /* --- Estils de Títols --- */
+        .main-title, .section-title {
+            color: var(--color-blue);
+            font-weight: 900;
+            text-align: center;
+            width: 100%;
+            max-width: 900px; /* Amplada màxima del contenidor */
+        }
+
+        .main-title {
+            font-size: 36px;
+            padding-bottom: 5px;
+            border-bottom: 3px solid var(--color-blue);
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+        }
+        
+        /* --- Estil de Targeta (La clau per a la columna única) --- */
+        .team-container {
+            display: flex;
+            flex-direction: column; /* Apila totes les targetes verticalment */
+            gap: 20px;
+            width: 100%;
+            max-width: 950px; /* Defineix l'amplada de la columna */
+            padding-bottom: 50px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1.5px solid var(--color-dark-green);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            text-decoration: none; /* Elimina el subratllat dels enllaços */
+            color: inherit;
+            display: block; /* Assegura que l'enllaç ocupi tota la targeta */
+        }
+
+        .card:hover {
+            background-color: var(--color-light-bg);
+            border-color: var(--color-blue);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-content {
+            display: flex; /* Permet que la imatge i el text estiguin en una fila */
+            gap: 20px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            flex-shrink: 0; /* Evita que la imatge es redueixi */
+        }
+
+        .text-content {
+            flex-grow: 1;
+        }
+
+        /* --- Estils de Text --- */
+        .name { 
+            font-weight: 700;
+            font-size: 22px; 
+            color: var(--color-orange); 
+            margin: 0 0 5px 0;
+        }
+        .role { 
+            font-size: 17px; 
+            font-weight: 500;
+            color: var(--color-dark-green); 
+            margin: 0 0 10px 0;
+        }
+        .desc { 
+            font-size: 12px;
+            color: #555; 
+            margin: 0;
+            line-height: 1.3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="main-title">El nostre equip per al Rectorat UdG</h1>
+
+    <div class="team-container">
+        
+        <a href="https://somelcanvi.org/Qui-som/#Albert_Ruda" target="_blank" class="card">
+            <div class="card-content">
+                <img src="ruda.jpeg" alt="Albert Ruda" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Albert Ruda</p>
+                    <p class="role">Candidat a Rector</p>
+                    <p class="desc">Professor titular de Dret Civil (UdG). Ex-degà de la Facultat de Dret.</p>
+                    <p class="desc">Vull una universitat més audaç, transparent i moderna.</p>
+                    <p class="desc">El meu compromís és l’excel·lència en la docència i la recerca, posant les persones al centre. Impulsar una gestió universitària amb lideratge i visió de futur.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <h2 class="section-title">Vicerectorats i Secretaria General</h2>
+
+    <div class="team-container">
+
+        <a href="https://somelcanvi.org/Qui-som/#Fabiola_Vilaseca_Morera" target="_blank" class="card">
+            <div class="card-content">
+                <img src="vilaseca.jpg" alt="Fabiola Vilaseca Morera" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Fabiola Vilaseca Morera</p>
+                    <p class="role">Vicerectora de Recerca i Ciència Oberta</p>
+                    <p class="desc">Professora agregada de l’EPS (EQATA). Recerca en electrònica flexible i materials sostenibles per electrofisiologia. Vetllar per crear un entorn propici per a la recerca capdavantera, i excel·lir com a institució investigadora a nivell internacional. Fomentar iniciatives d’investigació de gran escala, interdisciplinàries i que creïn impacte.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Monica_Cunill_Olivas" target="_blank" class="card">
+            <div class="card-content">
+                <img src="cunill.jpeg" alt="Mònica Cunill Olivas" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Mònica Cunill Olivas</p>
+                    <p class="role">Vicerectora d’Estudiants i Alumni</p>
+                    <p class="desc">Professora agregada de Psicologia (FEP). Membre de l'IRQV. Recerca orientada a la salut emocional, pèrdua i dol. Vull impulsar una universitat que inspira, acompanya i empodera l’estudiantat. Promoure el benestar, la participació, la inclusió i la innovació digital per a l'alumnat. Enfortir la relació amb els Alumni.</p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="https://somelcanvi.org/Qui-som/#Eusebi_Calle_Ortega" target="_blank" class="card">
+            <div class="card-content">
+                <img src="calle.jpeg" alt="Eusebi Calle Ortega" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Eusebi Calle Ortega</p>
+                    <p class="role">Vicerector d’Estratègia Digital i IA</p>
+                    <p class="desc">Professor titular (Arquitectura i Tecnologia de Computadors). Recerca en aplicacions TIC a xarxes complexes. Vull liderar la transformació digital i l’ús responsable de la IA a la UdG. La UdG ha d’assumir el lideratge d’aquest procés al territori. Desenvolupar una estratègia digital integral al servei de la comunitat.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#MAntonia_Barcelo_Rado" target="_blank" class="card">
+            <div class="card-content">
+                <img src="barceló.jpeg" alt="M. Antònia Barceló Rado" class="profile-image">
+                <div class="text-content">
+                    <p class="name">M. Antònia Barceló Rado</p>
+                    <p class="role">Vicerectora de l’Equip Humà</p>
+                    <p class="desc">Professora titular de Mètodes Quantitatius (Economia i Empresa). Recerca aplicada a reptes de salut global. Impulsar la carrera professional del PDI i del PTGAS, amb igualtat d'oportunitats. Contribuir a construir una universitat cohesionada, oberta i justa. Fomentar un ambient de treball positiu i reconeixement del mèrit.</p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="https://somelcanvi.org/Qui-som/#Albert_Llado_Martinez" target="_blank" class="card">
+            <div class="card-content">
+                <img src="lladó.jpeg" alt="Albert Lladó Martínez" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Albert Lladó Martínez</p>
+                    <p class="role">Vicerector de Qualitat i Optimització</p>
+                    <p class="desc">Professor lector Serra Húnter de Dret administratiu. Recerca en universitat pública com a administració. Consolidar una UdG amb un funcionament intern ben coordinat i col·laboratiu. Créixer en prestigi aprofitant l'excel·lència i el talent col·lectiu. Optimitzar els processos de gestió per a una major eficiència i qualitat.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Marc_Saez_Zafra" target="_blank" class="card">
+            <div class="card-content">
+                <img src="saez.jpeg" alt="Marc Saez Zafra" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Marc Saez Zafra</p>
+                    <p class="role">Director de l'Escola de Doctorat</p>
+                    <p class="desc">Catedràtic d'Estadística i Econometria. Investigador Principal del GRECS. L'ED és un espai estratègic. Impulsar una Escola cohesionada, transparent, oberta i amb projecció internacional. Fomentar l'excel·lència i convertir la tesi en una contribució valuosa. Garantir la qualitat i l'impacte de la formació doctoral a la UdG.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Susana_Mantas_Jimenez" target="_blank" class="card">
+            <div class="card-content">
+                <img src="mantas.jpeg" alt="Susana Mantas Jiménez" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Susana Mantas Jiménez</p>
+                    <p class="role">Vicerectora de Comunitat, Sostenibilitat i Gènere</p>
+                    <p class="desc">Professora agregada (Infermeria). Compromís amb la promoció de la salut, benestar i equitat. Impulsar un ferm compromís amb els drets humans i la sostenibilitat. La UdG esdevindrà un model de referència saludable, equitativa i inclusiva. Enfortir la relació amb la comunitat universitària i l'entorn social.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Manuel_Vial_Dumas" target="_blank" class="card">
+            <div class="card-content">
+                <img src="vial.jpeg" alt="Manuel Vial Dumas" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Manuel Vial Dumas</p>
+                    <p class="role">Vicerector d'Internacionalització i Glocalització</p>
+                    <p class="desc">Professor agregat d'Història del Dret. Vol una UdG del territori i oberta al món (glocalització). Un lloc al qual arribar i des del qual projectar-se. Una casa oberta a entendre, comunicar-se i adaptar el que el món ofereix. Fomentar la cooperació global mantenint el vincle local.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Joaquim_Majo_Fernandez" target="_blank" class="card">
+            <div class="card-content">
+                <img src="majó.jpeg" alt="Joaquim Majó Fernández" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Joaquim Majó Fernández</p>
+                    <p class="role">Vicerector de Docència i Aprenentatge</p>
+                    <p class="desc">Professor Titular d’Universitat, ex-Degà de la Facultat de Turisme. Expert en gestió acadèmica. Treballarà per definir polítiques que garanteixin estudis ben estructurats. Impulsar una governança acadèmica més cohesionada entre centres (empremta UdG compartida). Promoure la innovació docent i l'adaptació a les noves metodologies.</p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="https://somelcanvi.org/Qui-som/#Enric_Verdu_Navarro" target="_blank" class="card">
+            <div class="card-content">
+                <img src="verdú.jpeg" alt="Enric Verdú Navarro" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Enric Verdú Navarro</p>
+                    <p class="role">Vicerector d’Impacte Social</p>
+                    <p class="desc">Professor Titular (TU) de Ciències Mèdiques. Recerca focalitzada en el dolor patològic. Impulsarà polítiques positives per causar canvis significatius i duradors a la UdG. Impacte social vol dir incidir en la realitat que ens envolta i transformar-la. Potenciar la transferència de coneixement a la societat i al teixit productiu.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Josep_Rossell_Costa" target="_blank" class="card">
+            <div class="card-content">
+                <img src="rosell.jpeg" alt="Josep Rossell Costa" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Josep Rossell Costa</p>
+                    <p class="role">Secretari General</p>
+                    <p class="desc">Responsable de la Secretaria General (PTGAS funcionari). Experiència en gestió administrativa. Em proposo impulsar una Secretaria professionalitzada, moderna i transparent. Amb processos eficients i eines digitals que simplifiquin la gestió. Contribuir a la millora institucional amb qualitat i proximitat.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <h2 class="section-title">Adjunts i Delegats</h2>
+
+    <div class="team-container">
+
+        <a href="https://somelcanvi.org/Qui-som/#Alicia_Baltasar_Bague" target="_blank" class="card">
+            <div class="card-content">
+                <img src="baltasar.jpeg" alt="Alícia Baltasar Bagué" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Alícia Baltasar Bagué</p>
+                    <p class="role">Adjunta d’Impacte Social</p>
+                    <p class="desc">Professora Titular d'Universitat (Infermeria). Responsable de projectes de Cooperació Universitària. Aplicar una responsabilitat social i ètica d'igualtat i d'inclusió. Reforçar la presència de la universitat com a agent transformador. Treballar en l'alineament de les accions amb els Objectius de Desenvolupament Sostenible (ODS).</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Marianna_Soler_i_Ortega" target="_blank" class="card">
+            <div class="card-content">
+                <img src="soler.jpg" alt="Marianna Soler i Ortega" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Marianna Soler i Ortega</p>
+                    <p class="role">Adjunta a Docència</p>
+                    <p class="desc">Professora agregada de Física. Recerca en transport de sediments i microplàstics en sistemes costaners. Vetllar per les condicions de l’ensenyament i l’entorn d’aprenentatge. Que els estudiants surtin ben preparats pels reptes d’aquest món canviant. Donar suport al Vicerector de Docència en la gestió i qualitat dels estudis de grau.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Daniel_Blasco_Franch" target="_blank" class="card">
+            <div class="card-content">
+                <img src="blasco.jpeg" alt="Daniel Blasco Franch" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Daniel Blasco Franch</p>
+                    <p class="role">Adjunt a Màsters</p>
+                    <p class="desc">Professor agregat a Turisme. Valora l’evolució, la transformació i el canvi com a motors necessaris. Treballar per una oferta de Màsters més excel·lent i competitiva. Millorar les estructures de suport (PDI i PTGAS) involucrades. Fomentar la creació de nous màsters amb visió de futur i inserció laboral.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Silvana_Canales_Gutierrez" target="_blank" class="card">
+            <div class="card-content">
+                <img src="canales.jpg" alt="Silvana Canales Gutiérrez" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Silvana Canales Gutiérrez</p>
+                    <p class="role">Adjunta per a Llatinoamèrica</p>
+                    <p class="desc">Professora lectora de Dret internacional privat. Recerca en plataformes digitals (UE i Llatinoamèrica). Impulsar la projecció de la UdG com a punt de connexió a Llatinoamèrica. Amb èmfasi en Colòmbia, Mèxic, l’Argentina i el Brasil. Coordinació d'acords de mobilitat i convenis internacionals a la regió.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Sonia_Senent_Crous" target="_blank" class="card">
+            <div class="card-content">
+                <img src="senent.jpeg" alt="Sònia Senent Crous" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Sònia Senent Crous</p>
+                    <p class="role">Adjunta de PTGAS</p>
+                    <p class="desc">PTGAS funcionària de carrera (des del 2000). Vicepresidenta de la Junta de PTGAS funcionari. Coneixement profund de la realitat del col·lectiu i defensa dels seus drets. Compromesa amb el desenvolupament professional i la valoració del treball del PTGAS. Treballar amb responsabilitat i fermesa per al col·lectiu administratiu.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Diego_Varga_Linde" target="_blank" class="card">
+            <div class="card-content">
+                <img src="varga.jpeg" alt="Diego Varga Linde" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Diego Varga Linde</p>
+                    <p class="role">Adjunt de l’Equip PDI</p>
+                    <p class="desc">Professor titular de Geografia (Tecnologies de la Informació Geogràfica). Expert en atracció de talent. Compromís amb l’atracció i retenció del talent investigador. Proposar plans de contractació més justos i clars. Millora de les condicions laborals: dedicacions, permisos i reconeixement del PDI.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Nela_Filimon_Costin" target="_blank" class="card">
+            <div class="card-content">
+                <img src="filimon.jpeg" alt="Nela Filimon Costin" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Nela Filimon Costin</p>
+                    <p class="role">Adjunta de Relació amb Empresa</p>
+                    <p class="desc">Professora agregada Serra Húnter (Empresa). Recerca en màrqueting amb aproximació interdisciplinària. Aprofitar l’experiència per promoure la cooperació UdG – empresa. Fomentar la innovació i l'intercanvi de coneixement amb el sector productiu. Facilitar la transferència de tecnologia i la creació d'spin-offs.</p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="https://somelcanvi.org/Qui-som/#Carme_Carrion_Ribas" target="_blank" class="card">
+            <div class="card-content">
+                <img src="carrion.jpg" alt="Carme Carrión Ribas" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Carme Carrión Ribas</p>
+                    <p class="role">Adjunta a Recerca i Ciència Oberta</p>
+                    <p class="desc">Doctora en bioquímica i biologia molecular. IP del grup eHealth-TransLab (UOC-UdG). Impulsar la recerca amb una mirada inter- i trans-disciplinària. Donar suport al Vicerectorat en la implementació de la política de Ciència Oberta. Facilitar l'accés a dades i publicacions científiques a tota la comunitat.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Ningsu_Luo" target="_blank" class="card">
+            <div class="card-content">
+                <img src="luo.jpeg" alt="Ningsu Luo" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Ningsu Luo</p>
+                    <p class="role">Adjunt per a la Xina</p>
+                    <p class="desc">Catedràtic d’Enginyeria de Sistemes i Automàtica. President Ass. Estudiants Xinesos UdG. Aprofitar el coneixement sobre la Xina per promoure la cooperació. Col·laboració amb universitats, institucions de recerca i empreses xineses. Enfortir els lligams amb l'ambaixada i el consolat general de la Xina a Espanya.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Pilar_Albertin_Carbo" target="_blank" class="card">
+            <div class="card-content">
+                <img src="albertin.jpg" alt="Pilar Albertín Carbó" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Pilar Albertín Carbó</p>
+                    <p class="role">Delegada de Gènere</p>
+                    <p class="desc">Doctora i professora titular de Psicologia Social. Experiència en perspectiva de gènere i violències. Participa en projectes de cooperació amb Llatinoamèrica (col·lectiu LGTBIQ+). Impulsar pràctiques universitàries amb una mirada crítica queer i feminista. Vetllar per la igualtat d'oportunitats i l'aplicació efectiva dels plans d'igualtat.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://somelcanvi.org/Qui-som/#Ricard_Nunez_Fugarolas" target="_blank" class="card">
+            <div class="card-content">
+                <img src="nuñez.jpg" alt="Ricard Nuñez Fugarolas" class="profile-image">
+                <div class="text-content">
+                    <p class="name">Ricard Nuñez Fugarolas</p>
+                    <p class="role">Delegat de Digitalització</p>
+                    <p class="desc">Professor associat (Màster en RRHH). Docència en transformació digital i IA aplicada. Aposta per una UdG que posi el progrés digital al servei de les persones (PDI, PTGAS, estudiants). Liderar la transformació amb criteri, empatia i ambició. Coordinació amb el Vicerector d’Estratègia Digital i IA.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>
