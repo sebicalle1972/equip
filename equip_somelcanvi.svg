@@ -1,0 +1,361 @@
+<svg width="1350" height="3400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    /* --- Estils Som el Canvi --- */
+    
+    /* Paleta de Colors: 
+       - #004D40 (Verd Fosc - Rols)
+       - #0079C1 (Blau Clar/Cel - Títols Principals i Seccions) 
+       - #FF8C00 (Taronja - Noms)
+    */
+
+    /* Estils de text millorats */
+    .name { 
+      font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; 
+      font-weight: 700;
+      font-size: 22px; 
+      /* Noms en TARONJA */
+      fill: #FF8C00; 
+    }
+    .role { 
+      font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; 
+      font-size: 17px; 
+      font-weight: 500;
+      /* Rols en VERD FOSC */
+      fill: #004D40; 
+    }
+    .desc { 
+      font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; 
+      font-size: 12px;
+      fill: #555; 
+    }
+    .card { 
+      fill: #ffffff; 
+      stroke: #004D40; 
+      stroke-width: 1.5;
+      rx: 15;
+      height: 230; 
+      transition: fill 0.3s, stroke 0.3s; 
+    }
+    .card:hover { 
+      fill: #F0F8F7; 
+      stroke: #0079C1;
+    }
+    a { cursor: pointer; }
+    .center-text { text-anchor: middle; }
+    .left-text { text-anchor: start; }
+    
+    /* TÍTOL DE SECCIÓ EN BLAU CEL */
+    .section-title {
+      font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 900;
+      /* Títols de Secció en BLAU CEL */
+      fill: #0079C1; 
+    }
+    
+    /* TÍTOL PRINCIPAL EN BLAU CEL */
+    .main-title {
+      font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 900;
+      font-size: 36px;
+      /* Títol Principal en BLAU CEL */
+      fill: #0079C1; 
+    }
+  </style>
+  
+  <g>
+    <text x="675" y="50" class="center-text main-title">El nostre equip per al Rectorat UdG</text>
+    <line x1="400" y1="55" x2="950" y2="55" stroke="#0079C1" stroke-width="3"/>
+  </g>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Albert_Ruda" target="_blank">
+    <rect x="375" y="100" width="600" class="card" />
+    <image x="385" y="125" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="ruda.jpeg" />
+    <text x="525" y="140" class="name left-text">Albert Ruda</text>
+    <text x="525" y="160" class="role left-text">Candidat a Rector</text>
+    <text x="525" y="180" class="desc left-text">Professor titular de Dret Civil (UdG). Ex-degà de la Facultat de Dret.</text>
+    <text x="525" y="193" class="desc left-text">Vull una universitat més audaç, transparent i moderna.</text>
+    <text x="525" y="206" class="desc left-text">El meu compromís és l’excel·lència en la docència i la recerca,</text>
+    <text x="525" y="219" class="desc left-text">posant les persones al centre. Impulsar una gestió universitària</text>
+    <text x="525" y="232" class="desc left-text">amb lideratge i visió de futur.</text>
+  </a>
+
+  <text x="675" y="375" font-size="28" class="center-text section-title">Vicerectorats i Secretaria General</text>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Fabiola_Vilaseca_Morera" target="_blank">
+    <rect x="100" y="425" width="580" class="card" />
+    <image x="110" y="450" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="vilaseca.jpg" />
+    <text x="240" y="450" class="name left-text">Fabiola Vilaseca Morera</text>
+    <text x="240" y="470" class="role left-text">Vicerectora de Recerca i Ciència Oberta</text>
+    <text x="240" y="490" class="desc left-text">Professora agregada de l’EPS (EQATA). Recerca en electrònica</text>
+    <text x="240" y="503" class="desc left-text">flexible i materials sostenibles per electrofisiologia. Vetllar per crear</text>
+    <text x="240" y="516" class="desc left-text">un entorn propici per a la recerca capdavantera i excel·lir com</text>
+    <text x="240" y="529" class="desc left-text">a institució investigadora a nivell internacional. Fomentar iniciatives</text>
+    <text x="240" y="542" class="desc left-text">d’investigació de gran escala, interdisciplinàries i que creïn impacte.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Monica_Cunill_Olivas" target="_blank">
+    <rect x="670" y="425" width="580" class="card" />
+    <image x="680" y="450" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="cunill.jpeg" />
+    <text x="810" y="450" class="name left-text">Mònica Cunill Olivas</text>
+    <text x="810" y="470" class="role left-text">Vicerectora d’Estudiants i Alumni</text>
+    <text x="810" y="490" class="desc left-text">Professora agregada de Psicologia (FEP). Membre de l'IRQV.</text>
+    <text x="810" y="503" class="desc left-text">Recerca orientada a la salut emocional, pèrdua i dol. Vull impulsar</text>
+    <text x="810" y="516" class="desc left-text">una universitat que inspira, acompanya i empodera l’estudiantat.</text>
+    <text x="810" y="529" class="desc left-text">Promoure el benestar, la participació, la inclusió i la innovació digital</text>
+    <text x="810" y="542" class="desc left-text">per a l'alumnat. Enfortir la relació amb els Alumni.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Eusebi_Calle_Ortega" target="_blank">
+    <rect x="100" y="675" width="580" class="card" />
+    <image x="110" y="700" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="calle.jpeg" />
+    <text x="240" y="700" class="name left-text">Eusebi Calle Ortega</text>
+    <text x="240" y="720" class="role left-text">Vicerector d’Estratègia Digital i IA</text>
+    <text x="240" y="740" class="desc left-text">Professor titular (Arquitectura i Tecnologia de Computadors). Recerca</text>
+    <text x="240" y="753" class="desc left-text">en aplicacions TIC a xarxes complexes. Vol liderar la transformació</text>
+    <text x="240" y="766" class="desc left-text">digital i l’ús responsable de la IA a la UdG. La UdG ha d’assumir el</text>
+    <text x="240" y="779" class="desc left-text">lideratge d’aquest procés al territori. Desenvolupar una estratègia</text>
+    <text x="240" y="792" class="desc left-text">digital integral al servei de la comunitat.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#MAntonia_Barcelo_Rado" target="_blank">
+    <rect x="670" y="675" width="580" class="card" />
+    <image x="680" y="700" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="barceló.jpeg" />
+    <text x="810" y="700" class="name left-text">M. Antònia Barceló Rado</text>
+    <text x="810" y="720" class="role left-text">Vicerectora de l’Equip Humà</text>
+    <text x="810" y="740" class="desc left-text">Professora titular de Mètodes Quantitatius (Economia i Empresa).</text>
+    <text x="810" y="753" class="desc left-text">Recerca aplicada a reptes de salut global. Impulsar la carrera</text>
+    <text x="810" y="766" class="desc left-text">professional del PDI i del PTGAS, amb igualtat d'oportunitats.</text>
+    <text x="810" y="779" class="desc left-text">Contribuir a construir una universitat cohesionada, oberta i justa.</text>
+    <text x="810" y="792" class="desc left-text">Fomentar un ambient de treball positiu i reconeixement del mèrit.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Albert_Llado_Martinez" target="_blank">
+    <rect x="100" y="925" width="580" class="card" />
+    <image x="110" y="950" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="lladó.jpeg" />
+    <text x="240" y="950" class="name left-text">Albert Lladó Martínez</text>
+    <text x="240" y="970" class="role left-text">Vicerector de Qualitat i Optimització</text>
+    <text x="240" y="990" class="desc left-text">Professor lector Serra Húnter de Dret administratiu. Recerca en</text>
+    <text x="240" y="1003" class="desc left-text">universitat pública com a administració. Consolidar una UdG amb un</text>
+    <text x="240" y="1016" class="desc left-text">funcionament intern ben coordinat i col·laboratiu. Créixer en prestigi</text>
+    <text x="240" y="1029" class="desc left-text">aprofitant l'excel·lència i el talent col·lectiu. Optimitzar els processos</text>
+    <text x="240" y="1042" class="desc left-text">de gestió per a una major eficiència i qualitat.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Marc_Saez_Zafra" target="_blank">
+    <rect x="670" y="925" width="580" class="card" />
+    <image x="680" y="950" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="saez.jpeg" />
+    <text x="810" y="950" class="name left-text">Marc Saez Zafra</text>
+    <text x="810" y="970" class="role left-text">Director de l'Escola de Doctorat</text>
+    <text x="810" y="990" class="desc left-text">Catedràtic d'Estadística i Econometria. Investigador Principal del GRECS.</text>
+    <text x="810" y="1003" class="desc left-text">L'ED és un espai estratègic. Impulsar una Escola cohesionada,</text>
+    <text x="810" y="1016" class="desc left-text">transparent, oberta i amb projecció internacional. Fomentar l'excel·lència</text>
+    <text x="810" y="1029" class="desc left-text">i convertir la tesi en una contribució valuosa. Garantir la qualitat i</text>
+    <text x="810" y="1042" class="desc left-text">l'impacte de la formació doctoral a la UdG.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Susana_Mantas_Jimenez" target="_blank">
+    <rect x="100" y="1175" width="580" class="card" />
+    <image x="110" y="1200" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="mantas.jpeg" />
+    <text x="240" y="1200" class="name left-text">Susana Mantas Jiménez</text>
+    <text x="240" y="1220" class="role left-text">Vicerectora de Comunitat, Sostenibilitat i Gènere</text>
+    <text x="240" y="1240" class="desc left-text">Professora agregada (Infermeria). Compromís amb la promoció</text>
+    <text x="240" y="1253" class="desc left-text">de la salut, benestar i equitat. Impulsar un ferm compromís amb</text>
+    <text x="240" y="1266" class="desc left-text">els drets humans i la sostenibilitat. La UdG esdevindrà un model</text>
+    <text x="240" y="1279" class="desc left-text">de referència saludable, equitativa i inclusiva. Enfortir la relació</text>
+    <text x="240" y="1292" class="desc left-text">amb la comunitat universitària i l'entorn social.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Manuel_Vial_Dumas" target="_blank">
+    <rect x="670" y="1175" width="580" class="card" />
+    <image x="680" y="1200" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="vial.jpeg" />
+    <text x="810" y="1200" class="name left-text">Manuel Vial Dumas</text>
+    <text x="810" y="1220" class="role left-text">Vicerector d'Internacionalització i Glocalització</text>
+    <text x="810" y="1240" class="desc left-text">Professor agregat d'Història del Dret. Vol una UdG del territori</text>
+    <text x="810" y="1253" class="desc left-text">i oberta al món (glocalització). Un lloc al qual arribar i des del qual</text>
+    <text x="810" y="1266" class="desc left-text">projectar-se. Una casa oberta a entendre, comunicar-se i adaptar</text>
+    <text x="810" y="1279" class="desc left-text">el que el món ofereix. Fomentar la cooperació global mantenint</text>
+    <text x="810" y="1292" class="desc left-text">el vincle local.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Joaquim_Majo_Fernandez" target="_blank">
+    <rect x="100" y="1425" width="580" class="card" />
+    <image x="110" y="1450" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="majó.jpeg" />
+    <text x="240" y="1450" class="name left-text">Joaquim Majó Fernández</text>
+    <text x="240" y="1470" class="role left-text">Vicerector de Docència i Aprenentatge</text>
+    <text x="240" y="1490" class="desc left-text">Professor Titular d’Universitat, ex-Degà de la Facultat de Turisme.</text>
+    <text x="240" y="1503" class="desc left-text">Expert en gestió acadèmica. Treballarà per definir polítiques que</text>
+    <text x="240" y="1516" class="desc left-text">garanteixin estudis ben estructurats. Impulsar una governança</text>
+    <text x="240" y="1529" class="desc left-text">acadèmica més cohesionada entre centres (empremta UdG compartida).</text>
+    <text x="240" y="1542" class="desc left-text">Promoure la innovació docent i l'adaptació a les noves metodologies.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Enric_Verdu_Navarro" target="_blank">
+    <rect x="670" y="1425" width="580" class="card" />
+    <image x="680" y="1450" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="verdú.jpeg" />
+    <text x="810" y="1450" class="name left-text">Enric Verdú Navarro</text>
+    <text x="810" y="1470" class="role left-text">Vicerector d’Impacte Social</text>
+    <text x="810" y="1490" class="desc left-text">Professor Titular (TU) de Ciències Mèdiques. Recerca focalitzada en</text>
+    <text x="810" y="1503" class="desc left-text">el dolor patològic. Impulsarà polítiques positives per causar canvis</text>
+    <text x="810" y="1516" class="desc left-text">significatius i duradors a la UdG. Impacte social vol dir incidir en la</text>
+    <text x="810" y="1529" class="desc left-text">realitat que ens envolta i transformar-la. Potenciar la transferència</text>
+    <text x="810" y="1542" class="desc left-text">de coneixement a la societat i al teixit productiu.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Josep_Rossell_Costa" target="_blank">
+    <rect x="100" y="1675" width="580" class="card" />
+    <image x="110" y="1700" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="rosell.jpeg" />
+    <text x="240" y="1700" class="name left-text">Josep Rossell Costa</text>
+    <text x="240" y="1720" class="role left-text">Secretari General</text>
+    <text x="240" y="1740" class="desc left-text">Responsable de la Secretaria General (PTGAS funcionari). Experiència</text>
+    <text x="240" y="1753" class="desc left-text">en gestió administrativa. Proposa impulsar una Secretaria</text>
+    <text x="240" y="1766" class="desc left-text">professionalitzada, moderna i transparent. Amb processos eficients</text>
+    <text x="240" y="1779" class="desc left-text">i eines digitals que simplifiquin la gestió. Contribuir a la millora</text>
+    <text x="240" y="1792" class="desc left-text">institucional amb qualitat i proximitat.</text>
+  </a>
+
+  <text x="675" y="1935" font-size="28" class="center-text section-title">Adjunts i Delegats</text>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Manuel_Campdepadrós" target="_blank">
+    <rect x="100" y="1985" width="580" class="card" />
+    <image x="110" y="2010" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="campdepadrós.jpeg" />
+    <text x="240" y="2010" class="name left-text">Manuel Campdepadrós</text>
+    <text x="240" y="2030" class="role left-text">Cap de Campanya</text>
+    <text x="240" y="2050" class="desc left-text">Professor del Departament de Dret Públic de la Facultat de Dret (UdG).</text>
+    <text x="240" y="2063" class="desc left-text">Llicenciat en Ciències Polítiques i de l'Administració. Treballa per la</text>
+    <text x="240" y="2076" class="desc left-text">cohesió i l'impuls del projecte de Som el Canvi. Especialitzat en la</text>
+    <text x="240" y="2089" class="desc left-text">coordinació estratègica i comunicativa de la campanya.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Ricard_Nunez_Fugarolas" target="_blank">
+    <rect x="670" y="1985" width="580" class="card" />
+    <image x="680" y="2010" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="nuñez.jpg" />
+    <text x="810" y="2010" class="name left-text">Ricard Nuñez Fugarolas</text>
+    <text x="810" y="2030" class="role left-text">Delegat de Digitalització</text>
+    <text x="810" y="2050" class="desc left-text">Professor associat (Màster en RRHH). Docència en transformació</text>
+    <text x="810" y="2063" class="desc left-text">digital i IA aplicada. Aposta per una UdG que posi el progrés digital</text>
+    <text x="810" y="2076" class="desc left-text">al servei de les persones (PDI, PTGAS, estudiants). Liderar la</text>
+    <text x="810" y="2089" class="desc left-text">transformació amb criteri, empatia i ambició. Coordinació amb el</text>
+    <text x="810" y="2102" class="desc left-text">Vicerector d’Estratègia Digital i IA.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Alicia_Baltasar_Bague" target="_blank">
+    <rect x="100" y="2235" width="580" class="card" />
+    <image x="110" y="2260" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="baltasar.jpeg" />
+    <text x="240" y="2260" class="name left-text">Alícia Baltasar Bagué</text>
+    <text x="240" y="2280" class="role left-text">Adjunta d’Impacte Social</text>
+    <text x="240" y="2300" class="desc left-text">Professora Titular d'Universitat (Infermeria). Responsable de projectes</text>
+    <text x="240" y="2313" class="desc left-text">de Cooperació Universitària. Aplicar una responsabilitat social i ètica</text>
+    <text x="240" y="2326" class="desc left-text">d'igualtat i d'inclusió. Reforçar la presència de la universitat com</text>
+    <text x="240" y="2339" class="desc left-text">a agent transformador. Treballar en l'alineament de les accions amb</text>
+    <text x="240" y="2352" class="desc left-text">els Objectius de Desenvolupament Sostenible (ODS).</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Marianna_Soler_i_Ortega" target="_blank">
+    <rect x="670" y="2235" width="580" class="card" />
+    <image x="680" y="2260" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="soler.jpg" />
+    <text x="810" y="2260" class="name left-text">Marianna Soler i Ortega</text>
+    <text x="810" y="2280" class="role left-text">Adjunta a Docència</text>
+    <text x="810" y="2300" class="desc left-text">Professora agregada de Física. Recerca en transport de sediments</text>
+    <text x="810" y="2313" class="desc left-text">i microplàstics en sistemes costaners. Vetllar per les condicions de</text>
+    <text x="810" y="2326" class="desc left-text">l’ensenyament i l’entorn d’aprenentatge. Que els estudiants surtin ben</text>
+    <text x="810" y="2339" class="desc left-text">preparats pels reptes d’aquest món canviant. Donar suport al</text>
+    <text x="810" y="2352" class="desc left-text">Vicerector de Docència en la gestió i qualitat dels estudis de grau.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Daniel_Blasco_Franch" target="_blank">
+    <rect x="100" y="2485" width="580" class="card" />
+    <image x="110" y="2510" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="blasco.jpeg" />
+    <text x="240" y="2510" class="name left-text">Daniel Blasco Franch</text>
+    <text x="240" y="2530" class="role left-text">Adjunt a Màsters</text>
+    <text x="240" y="2550" class="desc left-text">Professor agregat a Turisme. Valora l’evolució, la transformació i el</text>
+    <text x="240" y="2563" class="desc left-text">canvi com a motors necessaris. Treballar per una oferta de Màsters</text>
+    <text x="240" y="2576" class="desc left-text">més excel·lent i competitiva. Millorar les estructures de suport (PDI</text>
+    <text x="240" y="2589" class="desc left-text">i PTGAS) involucrades. Fomentar la creació de nous màsters amb</text>
+    <text x="240" y="2602" class="desc left-text">visió de futur i inserció laboral.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Silvana_Canales_Gutierrez" target="_blank">
+    <rect x="670" y="2485" width="580" class="card" />
+    <image x="680" y="2510" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="canales.jpg" />
+    <text x="810" y="2510" class="name left-text">Silvana Canales Gutiérrez</text>
+    <text x="810" y="2530" class="role left-text">Adjunta per a Llatinoamèrica</text>
+    <text x="810" y="2550" class="desc left-text">Professora lectora de Dret internacional privat. Recerca en plataformes</text>
+    <text x="810" y="2563" class="desc left-text">digitals (UE i Llatinoamèrica). Impulsa la projecció de la UdG com</text>
+    <text x="810" y="2576" class="desc left-text">a punt de connexió a Llatinoamèrica. Amb èmfasi en Colòmbia, Mèxic,</text>
+    <text x="810" y="2589" class="desc left-text">l’Argentina i el Brasil. Coordinació d'acords de mobilitat i convenis</text>
+    <text x="810" y="2602" class="desc left-text">internacionals a la regió.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Sonia_Senent_Crous" target="_blank">
+    <rect x="100" y="2735" width="580" class="card" />
+    <image x="110" y="2760" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="senent.jpeg" />
+    <text x="240" y="2760" class="name left-text">Sònia Senent Crous</text>
+    <text x="240" y="2780" class="role left-text">Adjunta de PTGAS</text>
+    <text x="240" y="2800" class="desc left-text">PTGAS funcionària de carrera (des del 2000). Vicepresidenta de la Junta</text>
+    <text x="240" y="2813" class="desc left-text">de PTGAS funcionari. Coneixement profund de la realitat del col·lectiu</text>
+    <text x="240" y="2826" class="desc left-text">i defensa dels seus drets. Compromesa amb el desenvolupament</text>
+    <text x="240" y="2839" class="desc left-text">professional i la valoració del treball del PTGAS. Treballar amb</text>
+    <text x="240" y="2852" class="desc left-text">responsabilitat i fermesa per al col·lectiu administratiu.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Diego_Varga_Linde" target="_blank">
+    <rect x="670" y="2735" width="580" class="card" />
+    <image x="680" y="2760" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="varga.jpeg" />
+    <text x="810" y="2760" class="name left-text">Diego Varga Linde</text>
+    <text x="810" y="2780" class="role left-text">Adjunt de l’Equip PDI</text>
+    <text x="810" y="2800" class="desc left-text">Professor titular de Geografia (Tecnologies de la Informació Geogràfica).</text>
+    <text x="810" y="2813" class="desc left-text">Expert en atracció de talent. Compromís amb l’atracció i retenció</text>
+    <text x="810" y="2826" class="desc left-text">del talent investigador. Proposar plans de contractació més justos</text>
+    <text x="810" y="2839" class="desc left-text">i clars. Millora de les condicions laborals: dedicacions, permisos</text>
+    <text x="810" y="2852" class="desc left-text">i reconeixement del PDI.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Nela_Filimon_Costin" target="_blank">
+    <rect x="100" y="2985" width="580" class="card" />
+    <image x="110" y="3010" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="filimon.jpeg" />
+    <text x="240" y="3010" class="name left-text">Nela Filimon Costin</text>
+    <text x="240" y="3030" class="role left-text">Adjunta de Relació amb Empresa</text>
+    <text x="240" y="3050" class="desc left-text">Professora agregada Serra Húnter (Empresa). Recerca en màrqueting</text>
+    <text x="240" y="3063" class="desc left-text">amb aproximació interdisciplinària. Aprofitar l’experiència per promoure</text>
+    <text x="240" y="3076" class="desc left-text">la cooperació UdG – empresa. Fomentar la innovació i l'intercanvi</text>
+    <text x="240" y="3089" class="desc left-text">de coneixement amb el sector productiu. Facilitar la transferència</text>
+    <text x="240" y="3102" class="desc left-text">de tecnologia i la creació d'spin-offs.</text>
+  </a>
+  
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Carme_Carrion_Ribas" target="_blank">
+    <rect x="670" y="2985" width="580" class="card" />
+    <image x="680" y="3010" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="carrion.jpg" />
+    <text x="810" y="3010" class="name left-text">Carme Carrión Ribas</text>
+    <text x="810" y="3030" class="role left-text">Adjunta a Recerca i Ciència Oberta</text>
+    <text x="810" y="3050" class="desc left-text">Doctora en bioquímica i biologia molecular. IP del grup eHealth-TransLab</text>
+    <text x="810" y="3063" class="desc left-text">(UOC-UdG). Impulsar la recerca amb una mirada inter- i trans-disciplinària.</text>
+    <text x="810" y="3076" class="desc left-text">Donar suport al Vicerectorat en la implementació de la política de Ciència</text>
+    <text x="810" y="3089" class="desc left-text">Oberta. Facilitar l'accés a dades i publicacions científiques a tota la</text>
+    <text x="810" y="3102" class="desc left-text">comunitat.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Ningsu_Luo" target="_blank">
+    <rect x="100" y="3235" width="580" class="card" />
+    <image x="110" y="3260" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="luo.jpeg" />
+    <text x="240" y="3260" class="name left-text">Ningsu Luo</text>
+    <text x="240" y="3280" class="role left-text">Adjunt per a la Xina</text>
+    <text x="240" y="3300" class="desc left-text">Catedràtic d’Enginyeria de Sistemes i Automàtica. President Ass. Estudiants</text>
+    <text x="240" y="3313" class="desc left-text">Xinesos UdG. Aprofitar el coneixement sobre la Xina per promoure la</text>
+    <text x="240" y="3326" class="desc left-text">cooperació. Col·laboració amb universitats, institucions de recerca i empreses</text>
+    <text x="240" y="3339" class="desc left-text">xineses. Enfortir els lligams amb l'ambaixada i el consolat general de la</text>
+    <text x="240" y="3352" class="desc left-text">Xina a Espanya.</text>
+  </a>
+
+  <a xlink:href="https://somelcanvi.org/Qui-som/#Pilar_Albertin_Carbo" target="_blank">
+    <rect x="670" y="3235" width="580" class="card" />
+    <image x="680" y="3260" width="120" height="180" preserveAspectRatio="xMidYMid slice" href="albertin.jpg" />
+    <text x="810" y="3260" class="name left-text">Pilar Albertín Carbó</text>
+    <text x="810" y="3280" class="role left-text">Delegada de Gènere</text>
+    <text x="810" y="3300" class="desc left-text">Doctora i professora titular de Psicologia Social. Experta en perspectiva</text>
+    <text x="810" y="3313" class="desc left-text">de gènere i violències. Participa en projectes de cooperació amb</text>
+    <text x="810" y="3326" class="desc left-text">Llatinoamèrica (col·lectiu LGTBIQ+). Impulsar pràctiques universitàries</text>
+    <text x="810" y="3339" class="desc left-text">amb una mirada crítica queer i feminista. Vetllar per la igualtat</text>
+    <text x="810" y="3352" class="desc left-text">d'oportunitats i l'aplicació efectiva dels plans d'igualtat.</text>
+  </a>
+
+</svg>
